@@ -1,9 +1,9 @@
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
-//fun�ao criptografia
+//funçao criptografia
 void cripto(char *senha){
 	int tam=strlen(senha);
 	
@@ -115,7 +115,7 @@ void delUser(){
 	for(int i=0; i<cont; i++){
 		if(strcmp(nomes[i], usuario)==0 && strcmp(senhas[i], senha)==0){ //comparando nome e senha digitado com o adicionado anteriormente
 			add++;
-			for(int x=i; x<cont-1;x++){ //contador para substituir usuarios da linha vizinha, evitando espa�os em branco
+			for(int x=i; x<cont-1;x++){ //contador para substituir usuarios da linha vizinha, evitando espaï¿½os em branco
 				strcpy(nomes[x], nomes[x+1]);
 				strcpy(senhas[x], senhas[x+1]);
 			}
